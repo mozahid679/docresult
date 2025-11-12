@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Result;
+use App\Models\WebsiteSetting;
 
 class HomeController extends Controller
 {

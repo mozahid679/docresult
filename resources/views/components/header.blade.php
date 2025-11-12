@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beautiful Trishal</title>
+    <title>Result</title>
     <!-- Fonts -->
     <link href="https://fonts.bunny.net" rel="preconnect">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
@@ -20,37 +20,33 @@
 </head>
 
 <body class="flex flex-col items-center bg-gradient-to-br from-green-50 to-blue-50 text-[#1b1b18] lg:justify-center">
-    <header class="not-has-[nav]:hidden mb-12 w-full max-w-full text-sm lg:max-w-full">
+    <header class="not-has-[nav]:hidden mb-8 w-full max-w-full text-sm lg:max-w-full">
 
-        <div class="flex items-center justify-around bg-indigo-400 py-2">
+        <div class="flex items-center justify-around bg-indigo-400 p-2">
             <a class="flex flex-col items-center space-x-3" href="/">
                 <img class="h-12 w-12" src="img/logo.png" alt="govt">
-                <p>স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রানালয়</p>
+                <p class="pt-2">স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রানালয়</p>
             </a>
             <div class="p-2 text-center text-black">
-                <h2 class="mb-2 text-xl font-semibold text-gray-800">স্বাস্থ্য শিক্ষা অধিদপ্তর</h2>
-                <h2 class="mb-2 text-xl font-semibold text-gray-800">স্বাস্থ্য শিক্ষা ও পরিবার কল্যাণ বিভাগ</h2>
-                <p class="mb-8 text-sm text-gray-500">স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রানালয় </p>
+                <h2 class="mb-2 text-xl font-semibold text-gray-950">স্বাস্থ্য শিক্ষা অধিদপ্তর</h2>
+                <h2 class="mb-2 text-lg font-semibold text-gray-950">স্বাস্থ্য শিক্ষা ও পরিবার কল্যাণ বিভাগ</h2>
+                <p class="text-sm text-gray-950">স্বাস্থ্য ও পরিবার কল্যাণ মন্ত্রানালয় </p>
             </div>
             <div class="flex items-center justify-around bg-indigo-400 py-2">
-
                 <p class="text-black">গণপ্রজাতন্ত্রী বাংলাদেশ</p>
-                <a class="opacity-1 rounded-lg border border-green-600 px-4 py-2 text-sm font-semibold leading-normal text-green-600 transition-colors duration-200 hover:block hover:bg-green-50"
-                    href="{{ route('login') }}">
-                    Log in
-                </a>
             </div>
         </div>
         @if (Route::has('login'))
-            <nav class="border-b border-white bg-white/10 shadow-sm backdrop-blur-md">
+            <nav class="border-b border-white bg-white/10 shadow-sm backdrop-blur-md print:hidden">
                 <div
                     class="container flex items-center justify-end px-4 py-2 md:justify-center lg:mx-auto lg:justify-center lg:px-8">
                     <!-- Desktop Navigation Menu -->
                     <div class="hidden items-center space-x-2 md:flex lg:space-x-8">
                         @php
                             $currentPath = request()->path();
-                            $activeClass = 'text-indigo-600 font-bold lg:text-md text-md border-b-4 border-indigo-600';
-                            $inactiveClass = 'text-gray-700 font-semibold lg:text-md text-md hover:text-indigo-600';
+                            $activeClass =
+                                'text-indigo-600 font-semibold lg:text-lg text-md border-b-3 border-indigo-600';
+                            $inactiveClass = 'text-gray-700 lg:text-lg text-md hover:text-indigo-600';
                         @endphp
 
                         <a class="{{ in_array($currentPath, ['/', '/*']) ? $activeClass : $inactiveClass }} transition-colors duration-200"
@@ -111,8 +107,8 @@
 
                 <!-- Mobile Menu -->
                 <div class="hidden border-t border-gray-200 bg-white md:hidden" id="mobile-menu">
-                    <div class="container mx-auto space-y-4 px-4 py-4">
-                        <a class="block py-2 font-bold text-gray-700 transition-colors duration-200 hover:text-green-600"
+                    <div class="container mx-auto px-2 py-2">
+                        <a class="block font-bold text-gray-700 transition-colors duration-200 hover:text-green-600"
                             href="/">
                             ফলাফল
                         </a>
