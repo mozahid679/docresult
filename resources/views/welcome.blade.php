@@ -60,14 +60,14 @@
                                         <table class="">
                                             <tbody>
                                                 <tr class="border-b border-gray-100">
-                                                    <td class="px-4 py-3 font-semibold text-gray-700">Test Score
+                                                    <td class="px-4 py-3 font-semibold text-gray-700">Test Score:
                                                     </td>
                                                     <td class="px-4 py-3 text-gray-900">{{ $result->TestScore }}
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="px-4 py-3 font-semibold text-gray-700">Merit
-                                                        Score</td>
+                                                        Score: </td>
                                                     <td class="px-4 py-3 text-gray-900">
                                                         {{ $result->meritScore }}</td>
                                                 </tr>
